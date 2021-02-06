@@ -16,7 +16,7 @@ const io = socketIO(expressServer, {
 
 io.on('connection', socket => {
 
-  // One Client send a message
+  // One Client sent a message
   socket.on('newMessageToServer', msg => {
     console.log(msg)
 
